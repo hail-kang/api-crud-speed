@@ -4,6 +4,7 @@ from django.db import models
 
 class Data(models.Model):
   name = models.CharField(max_length=100)
+  data = models.CharField(max_length=1000)
   created_at = models.DateTimeField(auto_now_add=True)
   modified_at = models.DateTimeField(auto_now=True)
   state_code = models.BooleanField(default=False)
