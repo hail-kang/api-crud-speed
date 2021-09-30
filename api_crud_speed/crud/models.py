@@ -11,7 +11,7 @@ class Data(models.Model):
 
 class Performance(models.Model):
   name = models.CharField(max_length=100)
-  performance = models.BigIntegerField()
+  performance = models.FloatField()
   created_at = models.DateTimeField(auto_now_add=True)
   modified_at = models.DateTimeField(auto_now=True)
   state_code = models.BooleanField(default=False)
