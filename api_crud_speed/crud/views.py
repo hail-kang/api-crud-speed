@@ -1,9 +1,12 @@
 from rest_framework import viewsets
-from .serializer import DataSerializer
-from .models import Data
+from .serializer import DataSerializer, PerformanceSerializer
+from .models import Data, Performance
 
 class DataViewSet(viewsets.ModelViewSet):
   queryset = Data.objects.all()
   serializer_class = DataSerializer
 
-# Create your views here.
+class PerformanceiewSet(viewsets.ModelViewSet):
+  queryset = Performance.objects.all()
+  serializer_class = PerformanceSerializer
+

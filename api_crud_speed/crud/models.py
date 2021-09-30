@@ -8,3 +8,10 @@ class Data(models.Model):
   created_at = models.DateTimeField(auto_now_add=True)
   modified_at = models.DateTimeField(auto_now=True)
   state_code = models.BooleanField(default=False)
+
+class Performance(models.Model):
+  name = models.CharField(max_length=100)
+  performance = models.BigIntegerField()
+  created_at = models.DateTimeField(auto_now_add=True)
+  modified_at = models.DateTimeField(auto_now=True)
+  state_code = models.BooleanField(default=False)
